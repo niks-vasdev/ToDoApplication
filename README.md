@@ -212,6 +212,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
+RUN npm run relay
 RUN npm run build
 
 # Production stage
