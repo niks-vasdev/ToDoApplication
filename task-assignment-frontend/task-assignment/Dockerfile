@@ -12,6 +12,8 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+RUN npm run relay
+
 # Build the application
 RUN npm run build
 
