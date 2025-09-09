@@ -1,0 +1,177 @@
+.list-view.list-view {
+    background: #f6f8fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 20px 0;
+    margin: 0 0 24px 0;
+    min-width: 320px;
+    min-height: 300px;
+    max-width: 400px;
+    transition: box-shadow 0.2s;
+    border: none;
+}
+
+
+.list-view .react-spectrum-Item {
+    background: #fff;
+    border-radius: 6px;
+    margin: 8px 16px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: background 0.2s;
+}
+
+.list-view .react-spectrum-Item:hover {
+    background: #eaeef2;
+}
+
+.list-view .react-spectrum-Text {
+    font-size: 1rem;
+    color: #222;
+}
+
+.list-view .react-spectrum-Text[slot="description"] {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Container for the whole board */
+.task-board {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 0;
+    background: #f4f6fb;
+    min-height: 100vh;
+}
+
+/* Card style for Pending and Completed columns */
+.task-column {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px 0 16px 0;
+    min-width: 340px;
+    max-width: 420px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: box-shadow 0.2s;
+}
+
+
+.task-column-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2a2e3a;
+    margin: 0 0 18px 28px;
+    letter-spacing: 0.5px;
+}
+
+.list-view {
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+}
+
+.list-view .react-spectrum-Item {
+    background: #f8fafc;
+    border-radius: 8px;
+    margin: 10px 18px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: background 0.2s, box-shadow 0.2s;
+    border-left: 4px solid #b3b3b3;
+}
+
+.list-view .react-spectrum-Item:hover {
+    background: #e9f0fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.list-view .react-spectrum-Text {
+    font-size: 1rem;
+    color: #222;
+}
+
+.list-view .react-spectrum-Text[slot="description"] {
+    font-size: 0.92rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.pending-border {
+    border-left-color: #fbbf24 !important; /* amber-400 */
+}
+
+.completed-border {
+    border-left-color: #34d399 !important; /* green-400 */
+}
+.task-card {
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.task-description {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.task-status {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.task-status::before {
+  content: "● ";
+}
+
+.task-card.pending .task-status {
+  color: #2d7d46; /* green */
+}
+
+.task-card.completed .task-status {
+  color: #555; /* gray */
+}
+
+.task-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+.badge-style{
+  font-size: 12px o !important;
+}
+.add-task-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px;
+    min-width: 340px;
+    max-width: 420px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: box-shadow 0.2s;
+}
+.task-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2a2e3a;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
